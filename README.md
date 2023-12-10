@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# Projekt Quizu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Opis projektu
 
-## Available Scripts
+Projekt Quizu to interaktywna aplikacja umożliwiająca użytkownikowi udział w quizie składającym się z 25 pytań. Każde pytanie zawiera cztery możliwe odpowiedzi, z których użytkownik wybiera jedną.
 
-In the project directory, you can run:
+## Zasady i Funkcje
 
-### `npm start`
+1. **Pytania i Odpowiedzi**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   - Dostępne jest 25 pytań, z którymi użytkownik może się spotkać. Każde pytanie ma cztery możliwe odpowiedzi.
+   - Użytkownik zobaczy pytaniami kolejno, po udzieleniu odpowiedzi (kliknięciu "Dalej").
+   - Ważne jest, aby każde pytanie było udzielone odpowiedzią – nie można pominąć żadnego z nich.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. **Manipulacja Odpowiedziami**
 
-### `npm test`
+   - Użytkownik ma możliwość zmiany odpowiedzi na wcześniej udzielone pytania.
+   - Przejście do poprzednich pytań i zmiana odpowiedzi jest dozwolona.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Przechowywanie Danych**
 
-### `npm run build`
+   - Informacje dotyczące postępu quizu są przechowywane w Session Storage.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Wynik Quizu**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - Po zakończeniu quizu użytkownik otrzyma wynik, który obejmuje liczbę punktów oraz informację, czy quiz został zaliczony (PASS) czy nie (FAIL). Zaliczenie wymaga uzyskania co najmniej 75% poprawnych odpowiedzi.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Pobieranie Wyniku w PDF**
 
-### `npm run eject`
+   - Po zakończeniu quizu istnieje możliwość pobrania wyniku wraz z udzielonymi odpowiedziami w formie pliku .pdf. Ten dokument może pełnić funkcję potwierdzenia ukończenia quizu lub certyfikatu.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+6. **Losowa Kolejność Pytań**
+   - Przy każdym uruchomieniu quizu kolejność pytań i odpowiedzi jest losowa, co zapewnia różnorodność i unikatowe doświadczenie przy każdym podejściu.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologie użyte
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- HTML
+- SCSS
+- React
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Autor
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Daniel Władyczewski 65821
