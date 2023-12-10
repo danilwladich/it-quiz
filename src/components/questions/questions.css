@@ -38,6 +38,7 @@
   text-align: center;
   height: 60px;
   margin: 0px 0px 5px 0px;
+  width: 100%;
 }
 @media (min-width: 767px) {
   .questions .question__title {
