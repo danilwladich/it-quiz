@@ -1,0 +1,45 @@
+.header {
+	background-color: #faf9fe;
+	box-shadow: #d1d3fa 0px 0px 20px;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		height: 50px;
+
+		@media (min-width: 767px) {
+			height: 75px;
+		}
+	}
+
+	&__title {
+		font-size: 20px;
+	}
+
+	&__logo {
+		a {
+			display: block;
+
+			transition: box-shadow 0.4s;
+			&:hover,
+			&:focus {
+				box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 10px -10px;
+			}
+			&:active {
+				box-shadow: none;
+			}
+		}
+		img {
+			width: 50px;
+			height: 50px;
+			mix-blend-mode: multiply;
+
+			@media (min-width: 767px) {
+				width: 75px;
+				height: 75px;
+			}
+		}
+	}
+}

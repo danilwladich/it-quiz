@@ -1,0 +1,45 @@
+@import "./null.scss";
+
+body {
+	background-color: #f5f5ff;
+	font-family: "Lato", sans-serif;
+}
+
+.App {
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.container {
+	padding: 0 10px;
+
+	@media (min-width: 767px) {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+.content {
+	padding: 15px 0;
+
+	@media (min-width: 767px) {
+		background-color: #faf9fe;
+
+		border-radius: 25px;
+		box-shadow: #d1d3fa 0px 0px 20px;
+
+		padding: 25px;
+		margin: 15px 0;
+
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&__wrapper {
+			width: 600px;
+		}
+	}
+}

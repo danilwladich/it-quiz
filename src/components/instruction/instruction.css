@@ -1,0 +1,53 @@
+.instruction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.instruction__title {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #7378f7;
+  color: #fff;
+}
+.instruction__rules {
+  list-style: inside decimal;
+}
+.instruction__rules > li:not(:last-child) {
+  margin: 0px 0px 5px 0px;
+}
+.instruction__rules li ol {
+  list-style: inside circle;
+}
+.instruction__button button {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #7378f7;
+  color: #fff;
+}
+.instruction__button button:not(:disabled) {
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  transition: -webkit-box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+}
+.instruction__button button:not(:disabled):hover, .instruction__button button:not(:disabled):focus {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 10px -10px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 10px -10px;
+}
+.instruction__button button:not(:disabled):active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}

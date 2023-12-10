@@ -1,0 +1,74 @@
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.result__title {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #7378f7;
+  color: #fff;
+}
+.result__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.result__buttons_certificate {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #7378f7;
+  color: #fff;
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  transition: -webkit-box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+}
+.result__buttons_certificate:hover, .result__buttons_certificate:focus {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 10px -10px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 10px -10px;
+}
+.result__buttons_certificate:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.result__buttons_reset {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: solid 1px #7378f7;
+  background-color: transparent;
+  color: #7378f7;
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  transition: -webkit-box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+}
+.result__buttons_reset:hover, .result__buttons_reset:focus {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 10px -10px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 10px -10px;
+}
+.result__buttons_reset:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
